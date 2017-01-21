@@ -10,29 +10,50 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.alan.hubuapp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="Name"
         android:ems="10"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:id="@+id/editText" />
+        android:layout_marginTop="17dp"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Button"
+        android:text="从服务器获取字段"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/button"
         android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="从服务器获取Json"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/getJson"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="解析Json"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getJson"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="41dp"
+        android:id="@+id/parseJson" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parseJson"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
-        android:id="@+id/button" />
+        android:layout_marginTop="58dp"
+        android:id="@+id/textView" />
+
 </RelativeLayout>
